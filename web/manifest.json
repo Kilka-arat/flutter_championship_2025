@@ -1,11 +1,11 @@
 {
-    "name": "flutter_api_samples",
-    "short_name": "flutter_api_samples",
+    "name": "matule",
+    "short_name": "matule",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A temporary code sample for Curve2D",
+    "description": "A new Flutter project.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
