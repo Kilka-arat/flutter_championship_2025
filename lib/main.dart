@@ -1,24 +1,23 @@
 import 'package:flutter/material.dart';
-import 'package:matule/router.dart';
+import 'home_screen.dart';
 
 void main() {
-  runApp(const App());
+  runApp(const MyApp());
 }
 
-class App extends StatelessWidget {
-  const App({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp.router(
-      debugShowCheckedModeBanner: false,
-      debugShowMaterialGrid: false,
-      showSemanticsDebugger: false,
-      title: 'Flutter Demo',
+    return MaterialApp(
+      title: 'Магазин обуви',
       theme: ThemeData(
+        primarySwatch: Colors.blue,
+        appBarTheme: const AppBarTheme(elevation: 0, centerTitle: true),
       ),
-      routerConfig: RouterConfigGo.router,
+      home: const HomeScreen(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
